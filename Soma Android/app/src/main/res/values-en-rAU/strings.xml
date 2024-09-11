@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sum</string>
+    <string name="DigitePrimeiroNumero">Insert the first number</string>
+    <string name="DigiteSegundoNumero">Insert the second number</string>
+    <string name="Somar">Sum</string>
+    <string name="Resultado">Result</string>
+</resources>

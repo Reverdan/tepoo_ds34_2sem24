@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Soma</string>
+    <string name="DigitePrimeiroNumero">Digite o primeiro número</string>
+    <string name="DigiteSegundoNumero">Digite o segundo número</string>
+    <string name="Somar">+</string>
+    <string name="Resultado">Resultado</string>
+    <string name="Subtrair">-</string>
+    <string name="Multiplicacao">*</string>
+    <string name="Divisao">/</string>
+</resources>
