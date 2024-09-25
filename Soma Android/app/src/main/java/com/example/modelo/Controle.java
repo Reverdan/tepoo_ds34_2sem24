@@ -2,7 +2,8 @@ package com.example.modelo;
 
 public class Controle
 {
-    private String mensagem;
+    public String mensagem;
+    private String resultado;
 
     public void executar(String numero1, String numero2, String op)
     {
@@ -13,7 +14,7 @@ public class Controle
         {
             Calculos calculos = new Calculos();
             calculos.somar(validacao.n1, validacao.n2, op);
-            this.mensagem = calculos.toString();
+            this.resultado = calculos.toString();
         }
         else
         {
@@ -24,6 +25,6 @@ public class Controle
     @Override
     public String toString()
     {
-        return mensagem;
+        return resultado;
     }
 }

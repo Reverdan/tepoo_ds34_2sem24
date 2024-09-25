@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,7 +56,15 @@ public class MainActivity extends AppCompatActivity
         Controle controle = new Controle();
         controle.executar(edtPrimeiroNumero.getText().toString(),
                 edtSegundoNumero.getText().toString(), op);
-        txvResultado.setText(controle.toString());
+        if (controle.mensagem.equals(""))
+        {
+            txvResultado.setText(controle.toString());
+        }
+        else
+        {
+            Toast.makeText(this, controle.mensagem,Toast.LENGTH_LONG).show();
+        }
+
     }
 
     private void eventos()
